@@ -25,10 +25,7 @@ add_more_features AS (
     FROM add_features
 )
 
-SELECT *
-FROM add_more_features
---- para agregar "description"
-SELECT 
+SELECT --- para agregar "description"
     h.*,
     w.description
 FROM add_more_features h
