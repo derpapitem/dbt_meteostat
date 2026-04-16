@@ -2,6 +2,10 @@ WITH hourly_data AS (
     SELECT * 
     FROM {{ref('staging_weather_hourly')}}
 ),
+weather_codes AS (
+    SELECT *
+    FROM {{ref('weather_codes')}}
+),
 add_features AS (
     SELECT *
     , timestamp::DATE AS date -- only date (year-month-day) as DATE data type
