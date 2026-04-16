@@ -27,3 +27,10 @@ add_more_features AS (
 
 SELECT *
 FROM add_more_features
+--- para agregar "description"
+SELECT 
+    h.*,
+    w.description
+FROM add_more_features h
+LEFT JOIN weather_codes w
+    ON h.condition_code = w.condition_code
