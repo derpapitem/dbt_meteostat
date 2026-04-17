@@ -8,9 +8,9 @@ weather_codes AS (
     SELECT *
     FROM {{ref('weather_codes')}}
 ),
---- Un CTE (Common Table Expression) es básicamente una tabla temporal que defines al inicio de una query con WITH 
----y puedes usar más adelante en el mismo código. 
----Se llama "expresión de tabla común" porque es una forma de nombrar y reutilizar una subquery.
+---  It's basically a temporary table that you define at the beginning of a query using `WITH`
+---  and you can use later in the same code.
+---  Es una forma de nombrar y reutilizar una subquery.
 add_features AS (
     SELECT *
     , timestamp::DATE AS date -- only date (year-month-day) as DATE data type
