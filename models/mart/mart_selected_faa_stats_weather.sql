@@ -86,14 +86,13 @@ SELECT
     w.avg_wind_speed,
     w.avg_peakgust 
 FROM flights_combined f
-LEFT JOIN prep_airports ap
+LEFT JOIN {{ref('prep_airports')}} ap
+--LEFT JOIN prep_airports ap
     ON f.airport_code = ap.faa
 INNER JOIN weather w
     ON w.airport_code = f.airport_code
     AND w.date = f.date
 
-    
-    
     
     
     
