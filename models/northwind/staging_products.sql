@@ -1,14 +1,4 @@
-/*
-SELECT *
-FROM northwind.products	p;
- */
 
-/*
-Use {{ source() }} to pull data from the raw tables.
-Rename columns to snake_case.
-Cast dates and numbers to the correct types.
-Keep only relevant columns.
- */
 
 WITH source_data AS (
     SELECT *
