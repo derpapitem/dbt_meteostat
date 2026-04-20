@@ -9,7 +9,7 @@ categoryid AS category_id,
 categoryname AS category_name,
 description AS description
 -- picture AS picture
-FROM northwind.categories c;
+FROM northwind.categories c
 
 
 

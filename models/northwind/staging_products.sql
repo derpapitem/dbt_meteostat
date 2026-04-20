@@ -15,7 +15,7 @@ unitsinstock::INT AS units_in_stock,
 unitsonorder::INT AS units_on_order,
 reorderlevel AS reorder_level,
 discontinued AS discontinued
-FROM northwind.products	p;
+FROM northwind.products	p
 
 
 

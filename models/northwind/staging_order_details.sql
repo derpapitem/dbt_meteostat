@@ -10,7 +10,7 @@ productid AS product_id,
 unitprice::NUMERIC AS unit_price,
 quantity::INT AS quantity,
 discount::NUMERIC AS discount
-FROM northwind.order_details od 
+FROM northwind.order_details od
 
 
 

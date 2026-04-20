@@ -18,4 +18,4 @@ shipcity AS ship_city,
 shipregion AS ship_region,
 shippostalcode AS ship_postal_code,
 shipcountry AS ship_country
-FROM northwind.orders o;
+FROM northwind.orders o
